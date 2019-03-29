@@ -22,7 +22,7 @@ class _MapState extends State<Map> {
   void _onMapTypeButtonPressed() {
     setState(() {
       _currentMapType = _currentMapType == MapType.normal
-          ? MapType.hybrid
+          ? MapType.satellite
           : MapType.normal;
     });
   }
@@ -43,7 +43,6 @@ class _MapState extends State<Map> {
         // This marker id can be anything that uniquely identifies each marker.
         markerId: MarkerId(LatLng(17.967125, 102.607419).toString()),
         position:  LatLng(17.967125, 102.607419),
-        zIndex: 900.0,
         onTap: ()
         {
           setState(() {
@@ -110,15 +109,9 @@ class _MapState extends State<Map> {
                       onPressed: _onMapTypeButtonPressed,
                       materialTapTargetSize: MaterialTapTargetSize.padded,
                       backgroundColor: Colors.green,
-                      child: const Icon(Icons.map, size: 36.0),
+                      child: const Icon(Icons.map, size: 25.0),
                     ),
-                    SizedBox(height: 16.0),
-                    FloatingActionButton(
-                      onPressed: _onAddMarkerButtonPressed,
-                      materialTapTargetSize: MaterialTapTargetSize.padded,
-                      backgroundColor: Colors.green,
-                      child: const Icon(Icons.add_location, size: 36.0),
-                    ),
+                    
                   ],
                 ),
               ),

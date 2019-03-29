@@ -11,7 +11,7 @@
     
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="map"
+        android:label="Maplao"
         android:icon="@mipmap/ic_launcher">
         <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDBaI6FZ04fjyHecP1g8uUh9SfVQVwr6_w"/>
         <activity
